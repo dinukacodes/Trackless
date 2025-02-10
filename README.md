@@ -1,6 +1,7 @@
 # NO-CRUMBS
 
 Privacy Without the Footprint 🛡️
+![image](https://github.com/user-attachments/assets/6d0a564a-28de-4140-9fb8-2ef39451a1fb)
 
 NO-CRUMBS is a powerful Chrome extension designed to protect your online privacy by blocking trackers, managing cookies, and ensuring a safer browsing experience with minimal effort.
 
