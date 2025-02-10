@@ -1,8 +1,8 @@
-# Trackless
+# NO-CRUMBS
 
 Privacy Without the Footprint 🛡️
 
-Trackless is a powerful Chrome extension designed to protect your online privacy by blocking trackers, managing cookies, and ensuring a safer browsing experience with minimal effort.
+NO-CRUMBS is a powerful Chrome extension designed to protect your online privacy by blocking trackers, managing cookies, and ensuring a safer browsing experience with minimal effort.
 
 ![icon128](https://github.com/user-attachments/assets/6e867494-9561-4682-b6be-92df71cfb6c0)
 
@@ -38,7 +38,7 @@ Trackless is a powerful Chrome extension designed to protect your online privacy
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/trackless.git
+git clone https://github.com/dinukacodes/NO-CRUMBS.git
 ```
 
 2. Open Chrome and navigate to `chrome://extensions/`
