@@ -4,7 +4,7 @@ Privacy Without the Footprint 🛡️
 
 Trackless is a powerful Chrome extension designed to protect your online privacy by blocking trackers, managing cookies, and ensuring a safer browsing experience with minimal effort.
 
-![Trackless Logo](images/icon128.png)
+![icon128](https://github.com/user-attachments/assets/6e867494-9561-4682-b6be-92df71cfb6c0)
 
 ## Features
 
@@ -101,16 +101,10 @@ Trackless is committed to user privacy:
 
 - Open an issue for bug reports or feature requests
 - Check the FAQ page in the extension for common questions
-- Contact us at [support email] for additional help
+- Contact me at dinukajkdy2.0@gmail.com for additional help
 
 ## Authors
 
-- Your Name/Organization
+- Dinuka Tharinda
 - Contributors welcome!
 
-## Acknowledgments
-
-- Icon design by [Designer Name]
-- Special thanks to the privacy community
-- Inspired by the need for simple, effective privacy tools
-- 
