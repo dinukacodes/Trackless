@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NO-CRUMBS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: #f5f7fa; color: #333; }
+    .container { width: 320px; padding: 16px; margin: 20px auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .header { text-align: center; margin-bottom: 16px; }
+    .header h1 { font-size: 1.5em; margin-bottom: 4px; }
+    .tagline { font-size: 0.9em; color: #777; }
+    .controls { margin-bottom: 16px; }
+    .toggle-group { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .toggle-item { display: flex; align-items: center; gap: 8px; }
+    .toggle-switch { position: relative; display: inline-block; width: 40px; height: 20px; }
+    .toggle-switch input { opacity: 0; width: 0; height: 0; }
+    .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
+    .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; transition: .4s; border-radius: 50%; }
+    input:checked + .slider { background-color: #4caf50; }
+    input:checked + .slider:before { transform: translateX(20px); }
+    .status { font-size: 0.85em; color: #555; }
+    .btn { display: inline-block; padding: 8px 16px; font-size: 0.9em; color: #fff; background-color: #4caf50; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; }
+    .btn:hover { background-color: #43a047; }
+    .btn.small { padding: 4px 8px; font-size: 0.8em; }
+    .stats { display: flex; justify-content: space-between; margin-bottom: 16px; }
+    .stat-card { display: flex; align-items: center; gap: 8px; flex: 1; background: #f0f0f0; border-radius: 4px; padding: 8px; margin-right: 8px; }
+    .stat-card:last-child { margin-right: 0; }
+    .stat-icon { width: 24px; height: 24px; }
+    .stat-info { text-align: right; flex: 1; }
+    .stat-info > div:first-child { font-size: 1.2em; font-weight: bold; }
+    .stat-label { font-size: 0.8em; color: #777; }
+    .actions { text-align: center; margin-bottom: 16px; }
+    .footer { text-align: center; font-size: 0.8em; color: #777; }
+    .help-link { color: #4caf50; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+    .help-icon { width: 16px; height: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>NO-CRUMBS</h1>
+      <p class="tagline">Privacy Without the Footprint</p>
+    </header>
+    <section class="controls">
+      <div class="toggle-group">
+        <div class="toggle-item">
+          <label class="toggle-switch">
+            <input type="checkbox" id="privacyToggle">
+            <span class="slider"></span>
+          </label>
+          <span id="privacyStatus" class="status">Shield Off</span>
+        </div>
+        <div class="toggle-item">
+          <label class="toggle-switch">
+            <input type="checkbox" id="whitelistToggle">
+            <span class="slider"></span>
+          </label>
+          <span id="whitelistStatus" class="status">Whitelist Off</span>
+        </div>
+      </div>
+      <button id="addWhitelistButton" class="btn small">Add Current Site</button>
+    </section>
+    <section class="stats">
+      <div class="stat-card">
+        <img src="../images/tracker_icon.png" alt="Trackers Blocked" class="stat-icon">
+        <div class="stat-info">
+          <div id="blockedTrackersCount">0</div>
+          <div class="stat-label">Trackers</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <img src="../images/cookie_icon.png" alt="Cookies Cleared" class="stat-icon">
+        <div class="stat-info">
+          <div id="clearedCookiesCount">0</div>
+          <div class="stat-label">Cookies</div>
+        </div>
+      </div>
+    </section>
+    <section class="actions">
+      <button id="clearCookiesButton" class="btn">Clear Cookies</button>
+    </section>
+    <footer class="footer">
+      <a href="faq.html" class="help-link" target="_blank">
+        <img src="../images/faq_icon.png" alt="Help" class="help-icon">
+        Help
+      </a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

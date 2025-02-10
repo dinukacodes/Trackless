@@ -1,0 +1,42 @@
+/* popup/faq.css */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Larger font for readability */
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px; /* Larger title */
+}
+
+.faq-item {
+    margin-bottom: 25px;
+}
+
+.faq-item h3 {
+    font-size: 20px; /* Slightly larger question */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.faq-item p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
